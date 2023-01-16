@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardViewRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_margin="@dimen/_1sdp"
+    card_view:cardCornerRadius="@dimen/_3sdp"
+    card_view:cardElevation="10dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/linearItem"
+        android:layout_margin="@dimen/_3sdp"
+        android:orientation="vertical"
+        android:padding="@dimen/_2sdp">
+
+
+        <ImageView
+            android:id="@+id/imgItems"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_140sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="centerCrop"
+            />
+
+
+        <TextView
+            android:id="@+id/txtDiscription"
+            style="@style/textViewStyleRowLayout"
+            android:layout_below="@+id/txtItemCode"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:singleLine="false"
+            android:ellipsize="end"
+            android:textColor="@color/colorGrey"
+            android:text="TEST" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgProfile"
+                android:layout_width="@dimen/_50ssp"
+                android:layout_height="@dimen/_50ssp"
+                android:layout_gravity="center"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_launcher_background" />
+
+            <TextView
+                android:id="@+id/txtProfileName"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/_15ssp"
+                android:textColor="@color/colorOrange"
+                style="@style/textViewStyleRowLayout"
+                android:textSize="@dimen/_20ssp"
+                android:text="Name" />
+
+
+
+
+
+
+        </LinearLayout>
+
+<!--        <LinearLayout style="@style/viewLineStyle" />-->
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
